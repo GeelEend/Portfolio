@@ -1,0 +1,101 @@
+body{
+    font-family: Poppins,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+header{
+    width:100%;
+    padding: 0.75rem;
+    padding-bottom:0.75rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    color: #fff;
+}
+.align-center{
+    align-items: center;
+}
+.header-logo{
+    font-size: 1.3rem;
+    margin-right: 18.47%;
+}
+.header-nav{
+    font-size: 1rem
+}
+.header-login{
+    border-radius:9999px;
+    border: 1px solid ;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    margin-left: 27.86%;
+}
+#mySidenav{
+    display:none
+}
+.sidenav-button{
+    display:none
+}
+.goeie-kleur{
+    background-color: #365280;
+}
+
+@media screen and (max-width: 768px){
+    .header-login{
+        display: none;
+    }
+    .header-logo{
+        font-size: 1rem;
+        margin-right:0;
+    }
+    .header-nav{
+        display:none
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #365280;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #fff;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .sidenav-button{
+        display:block
+    }
+    #mySidenav{
+        display: block;
+    }
+}
+
+
